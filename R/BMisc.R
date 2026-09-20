@@ -1696,7 +1696,7 @@ orig2t_inner <- function(orig, original_time.periods) {
 #'
 #' @export
 t2orig <- function(t, original_time.periods) {
-  # check that orignal time periods are equally spaced
+  # check that original time periods are equally spaced
   if (length(unique(diff(original_time.periods))) > 1) {
     warning("original_time.periods are unequally spaced, some downstream functions may not work as expected.")
   }
@@ -1721,7 +1721,7 @@ t2orig <- function(t, original_time.periods) {
 #'
 #' @export
 orig2t <- function(orig, original_time.periods) {
-  # check that orignal time periods are equally spaced
+  # check that original time periods are equally spaced
   if (length(unique(diff(original_time.periods))) > 1) {
     warning("original_time.periods are unequally spaced, some downstream functions may not work as expected.")
   }
